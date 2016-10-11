@@ -1,0 +1,5 @@
+D:\Egor\GitRepository\haffman\Haffman_Library\Haffman_Library\bin\Debug\Haffman_Library.dll
+D:\Egor\GitRepository\haffman\Haffman_Library\Haffman_Library\bin\Debug\Haffman_Library.pdb
+D:\Egor\GitRepository\haffman\Haffman_Library\Haffman_Library\obj\Debug\Haffman_Library.csprojResolveAssemblyReference.cache
+D:\Egor\GitRepository\haffman\Haffman_Library\Haffman_Library\obj\Debug\Haffman_Library.dll
+D:\Egor\GitRepository\haffman\Haffman_Library\Haffman_Library\obj\Debug\Haffman_Library.pdb
