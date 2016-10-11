@@ -122,9 +122,10 @@ namespace Haffman_Library
 
         private void SetCode(Element element, string str)
         {
-            string code=str.ToString();
+            string code; ;
             if ((element.ElementLeft == null) && (element.ElementRight == null))
             {
+                code = str.ToString();
                 element.Code = code;
                 DictionaryCodes.Add(element.Symbol, element.Code);
             }
