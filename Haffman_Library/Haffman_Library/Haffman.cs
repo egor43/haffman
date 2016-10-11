@@ -99,9 +99,12 @@ namespace Haffman_Library
         {
             for (int i = 0; i < list.Count - 1; i++)
             {
-                if (list[i].Probability <= list[i + 1].Probability)
+                for(int j=0;j<list.Count-1-i;j++)
                 {
-                    list.Reverse(i, 2);
+                    if (list[j].Probability <= list[j + 1].Probability)
+                    {
+                        list.Reverse(j, 2);
+                    }
                 }
             }
             return list;
