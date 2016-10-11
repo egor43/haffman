@@ -69,14 +69,91 @@ namespace Haffman_Library
             return result;
         }
 
+        private void AddListElement(List<Element> list)
+        {
+            if (list.Count > 1)
+            {
+                Element element = new Element();
+                for (int i = 0; i < 2; i++)
+                {
+                    //element.SummSymbol += list[list.Count - 1 - i].Symbol;
+                    if (i == 0)
+                    {
+                        list[list.Count - 1 - i].Code += "1";
+                        element.ElementRight = list[list.Count - 1 - i];
+                    }
+                    else
+                    {
+                        list[list.Count - 1 - i].Code += "0";
+                        element.ElementLeft = list[list.Count - 1 - i];
+                    }
+                    element.Probability += list[list.Count - 1 - i].Probability;
+                }
+                for (int i = 0; i < 2; i++)
+                {
+                    list.RemoveAt(list.Count - 1);
+                }
+                list.Add(element);
+                this.list = SortList(list);
+            }
+        }
+
+        private List<Element> SortList(List<Element> list)
+        {
+            for (int i = 0; i < list.Count - 1; i++)
+            {
+                if (list[i].Probability <= list[i + 1].Probability)
+                {
+                    list.Reverse(i, 2);
+                }
+            }
+            return list;
+        }
+
+        private void SetListElement(List<Element> list)
+        {
+            for (;;)
+                if (list.Count > 1)
+                {
+                    AddListElement(list);
+                }
+                else break;
+        }
+
+        private void SetCode(Element element, string str)
+        {
+            string code=str.ToString();
+            if ((element.ElementLeft == null) && (element.ElementRight == null))
+            {
+                element.Code = code;
+                Dictionary.Add(element.Symbol, element.Code);
+            }
+            else
+            {
+                if (element.ElementLeft != null)
+                {
+                    code += element.ElementRight.Code;
+                    SetCode(element.ElementRight, code);
+                    code = str.ToString();
+                }
+                if(element.ElementRight != null)
+                {
+                    code += element.ElementLeft.Code;
+                    SetCode(element.ElementLeft, code);
+                    code = str.ToString();
+                }
+            }
+        }
+
         #endregion
 
         #region Constryctory
 
-        public Haffman (string message)
+        public Haffman(string message)
         {
             this.message = message;
-            ProbabilityList(message);
+            SetListElement(ProbabilityList(message));
+            SetCode(list[0], "");
         }
 
         #endregion
