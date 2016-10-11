@@ -28,10 +28,8 @@ namespace Haffman_Library
         private class Element
         {
             public char Symbol { get; set; }
-            public string SummSymbol { get; set; }
             public double Probability { get; set; }
             public string Code { get; set; }
-            public Element UpElement { get; set; }
             public Element ElementLeft { get; set; }
             public Element ElementRight { get; set; }
         }
@@ -76,7 +74,6 @@ namespace Haffman_Library
                 Element element = new Element();
                 for (int i = 0; i < 2; i++)
                 {
-                    //element.SummSymbol += list[list.Count - 1 - i].Symbol;
                     if (i == 0)
                     {
                         list[list.Count - 1 - i].Code += "1";
@@ -126,22 +123,33 @@ namespace Haffman_Library
             if ((element.ElementLeft == null) && (element.ElementRight == null))
             {
                 element.Code = code;
-                Dictionary.Add(element.Symbol, element.Code);
+                DictionaryCodes.Add(element.Symbol, element.Code);
             }
             else
             {
                 if (element.ElementLeft != null)
                 {
-                    code += element.ElementRight.Code;
-                    SetCode(element.ElementRight, code);
                     code = str.ToString();
+                    code += element.ElementLeft.Code;
+                    SetCode(element.ElementLeft, code);
                 }
                 if(element.ElementRight != null)
                 {
-                    code += element.ElementLeft.Code;
-                    SetCode(element.ElementLeft, code);
                     code = str.ToString();
+                    code += element.ElementRight.Code;
+                    SetCode(element.ElementRight, code);
                 }
+            }
+        }
+
+        private void SetCodeMessage(Dictionary<char,string> dict)
+        {
+            for(int i=0;i<message.Length;i++)
+            {
+               foreach (var v in dict)
+                {
+                    if (v.Key == message[i]) MessageCode += v.Value;
+                } 
             }
         }
 
@@ -153,7 +161,9 @@ namespace Haffman_Library
         {
             this.message = message;
             SetListElement(ProbabilityList(message));
+            DictionaryCodes = new Dictionary<char, string>();
             SetCode(list[0], "");
+            SetCodeMessage(DictionaryCodes);
         }
 
         #endregion
