@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Haffman_Not_Tree</name>
+    </assembly>
+    <members>
+        <member name="T:Haffman_Not_Tree.HaffmanNotTreeLbr">
+            <summary>
+            Представляет метод Хаффмана (без построения дерева)
+            </summary>
+        </member>
+        <member name="P:Haffman_Not_Tree.HaffmanNotTreeLbr.MessageCode">
+            <summary>
+            Позволяет получить закодированное сообщение
+            </summary>
+        </member>
+        <member name="P:Haffman_Not_Tree.HaffmanNotTreeLbr.DictionaryCodes">
+            <summary>
+            Позволяет получить словарь со связкой "символ - код символа"
+            </summary>
+        </member>
+        <member name="T:Haffman_Not_Tree.HaffmanNotTreeLbr.Element">
+            <summary>
+            Представляет описание элемента (символа)
+            </summary>
+        </member>
+        <member name="M:Haffman_Not_Tree.HaffmanNotTreeLbr.ProbabilityList(System.String)">
+            <summary>
+            Вычисляет вероятность
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

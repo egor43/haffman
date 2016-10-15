@@ -1,0 +1,17 @@
+D:\Egor\GitRepository\haffman\Haffman_Library\TestHF\bin\Debug\TestHF.exe.config
+D:\Egor\GitRepository\haffman\Haffman_Library\TestHF\bin\Debug\TestHF.exe
+D:\Egor\GitRepository\haffman\Haffman_Library\TestHF\bin\Debug\TestHF.pdb
+D:\Egor\GitRepository\haffman\Haffman_Library\TestHF\bin\Debug\Haffman_Library.dll
+D:\Egor\GitRepository\haffman\Haffman_Library\TestHF\bin\Debug\Haffman_Library.pdb
+D:\Egor\GitRepository\haffman\Haffman_Library\TestHF\obj\Debug\TestHF.csprojResolveAssemblyReference.cache
+D:\Egor\GitRepository\haffman\Haffman_Library\TestHF\obj\Debug\TestHF.exe
+D:\Egor\GitRepository\haffman\Haffman_Library\TestHF\obj\Debug\TestHF.pdb
+D:\Egor\GitRepository\haffman\Haffman_Not_Tree\TestHF\obj\Debug\TestHF.csprojResolveAssemblyReference.cache
+D:\Egor\GitRepository\haffman\Haffman_Not_Tree\TestHF\obj\Debug\TestHF.exe
+D:\Egor\GitRepository\haffman\Haffman_Not_Tree\TestHF\obj\Debug\TestHF.pdb
+D:\Egor\GitRepository\haffman\Haffman_Not_Tree\TestHF\bin\Debug\TestHF.exe.config
+D:\Egor\GitRepository\haffman\Haffman_Not_Tree\TestHF\bin\Debug\TestHF.exe
+D:\Egor\GitRepository\haffman\Haffman_Not_Tree\TestHF\bin\Debug\TestHF.pdb
+D:\Egor\GitRepository\haffman\Haffman_Not_Tree\TestHF\bin\Debug\Haffman_Not_Tree.dll
+D:\Egor\GitRepository\haffman\Haffman_Not_Tree\TestHF\bin\Debug\Haffman_Not_Tree.pdb
+D:\Egor\GitRepository\haffman\Haffman_Not_Tree\TestHF\bin\Debug\Haffman_Not_Tree.xml

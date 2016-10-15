@@ -1,0 +1,6 @@
+D:\Egor\GitRepository\haffman\Haffman_Not_Tree\Haffman_Not_Tree\bin\Debug\Haffman_Not_Tree.dll
+D:\Egor\GitRepository\haffman\Haffman_Not_Tree\Haffman_Not_Tree\bin\Debug\Haffman_Not_Tree.pdb
+D:\Egor\GitRepository\haffman\Haffman_Not_Tree\Haffman_Not_Tree\obj\Debug\Haffman_Not_Tree.csprojResolveAssemblyReference.cache
+D:\Egor\GitRepository\haffman\Haffman_Not_Tree\Haffman_Not_Tree\obj\Debug\Haffman_Not_Tree.dll
+D:\Egor\GitRepository\haffman\Haffman_Not_Tree\Haffman_Not_Tree\obj\Debug\Haffman_Not_Tree.pdb
+D:\Egor\GitRepository\haffman\Haffman_Not_Tree\Haffman_Not_Tree\bin\Debug\Haffman_Not_Tree.XML
